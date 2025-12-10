@@ -24,7 +24,10 @@ function Events() {
             </div>
         </figure>
 
-        <h1>DENNE MÅNED</h1>
+        <div className="overskrift">
+          <h1>DENNE MÅNED</h1>
+        </div>
+        
         <section className="denne-måned">
           <div className="section-bokse">
             <figure>
@@ -53,7 +56,10 @@ function Events() {
           </div>
         </section>
 
-        <h1>TIL MUSIK ELSKERER</h1>
+        <div className="overskrift">
+          <h1>TIL MUSIK ELSKERER</h1>
+        </div>
+
         <section className="musik-elskere">
           <div className="section-bokse">
             <figure>
@@ -82,7 +88,10 @@ function Events() {
           </div>
         </section>
 
-        <h1>VORES WORKSHOP</h1>
+        <div className="overskrift">
+          <h1>VORES WORKSHOP</h1>
+        </div>
+
         <section className="vores-workshop">
           <div className="section-bokse">
             <figure>

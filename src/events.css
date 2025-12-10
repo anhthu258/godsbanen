@@ -31,13 +31,13 @@ figure.big-picture {
 }
 
 .header-infobox h2 {
-    color: #ffffff;
+    color: #f9f9f9;
     font-size: 3rem;
     font-weight: bold;
 }
 
 .header-infobox p {
-    color: #ffffff;
+    color: #f9f9f9;
     font-size: 1.3rem;
     line-height: 2rem;
     padding-top: 1rem;
@@ -47,24 +47,61 @@ figure.big-picture {
 
 
 
+/* ---------------------------------------- ↓↓ Overskrifter til sections ↓↓ */
+.overskrift {
+    display: flex;
+    justify-content: flex-start;
+    width: 95.6%;
+}
+
+.section-body h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #049CC9;
+    margin-top: 10rem;
+}
+/* ---------------------------------------- ↑↑ Overskrifter til sections ↑↑ */
+
+
+
+
 /* ---------------------------------------- ↓↓ Denne måned section ↓↓ */
 section.denne-måned {
     background-color: #DCDAC9;
     width: 95%;
+    padding: 3rem 2rem;
 }
 
 section.denne-måned div figure img {
-    width: 10rem;
+    width: 100%;
+}
+
+section.denne-måned div figure p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+section.denne-måned div figure button {
+    background-color: #049CC9;
+    color: #f9f9f9;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: #333 0rem 0.4rem 0.6rem -0.1rem;
 }
 
 .denne-måned .section-bokse {
     display: flex;
+    justify-content: space-around;
 }
 
 .denne-måned .section-bokse figure {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    width: 20%;
 }
 /* ---------------------------------------- ↑↑ Denne måned section ↑↑ */
 
@@ -72,12 +109,84 @@ section.denne-måned div figure img {
 
 
 /* ---------------------------------------- ↓↓ Musik elskerer section ↓↓ */
+section.musik-elskere {
+    background-color: #DCDAC9;
+    width: 95%;
+    padding: 3rem 2rem;
+}
 
+section.musik-elskere div figure img {
+    width: 100%;
+}
+
+section.musik-elskere div figure p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+section.musik-elskere div figure button {
+    background-color: #049CC9;
+    color: #f9f9f9;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: #333 0rem 0.4rem 0.6rem -0.1rem;
+}
+
+.musik-elskere .section-bokse {
+    display: flex;
+    justify-content: space-around;
+}
+
+.musik-elskere .section-bokse figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+}
 /* ---------------------------------------- ↑↑ Musik elskerer section ↑↑ */
 
 
 
 
 /* ---------------------------------------- ↓↓ Workshop section ↓↓ */
+section.vores-workshop {
+    background-color: #DCDAC9;
+    width: 95%;
+    padding: 3rem 2rem;
+}
 
+section.vores-workshop div figure img {
+    width: 100%;
+}
+
+section.vores-workshop div figure p {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+section.vores-workshop div figure button {
+    background-color: #049CC9;
+    color: #f9f9f9;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: #333 0rem 0.4rem 0.6rem -0.1rem;
+}
+
+.vores-workshop .section-bokse {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vores-workshop .section-bokse figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+}
 /* ---------------------------------------- ↑↑ Workshop section ↑↑ */
