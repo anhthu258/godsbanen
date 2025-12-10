@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  background: url("/images/workshopbg.svg") fixed center / cover no-repeat;
 }
 
 .parallax-background {
@@ -11,7 +12,6 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #f9f9f9;
   z-index: -1;
 }
 
@@ -24,4 +24,72 @@
 .parallax-content > div {
   padding: 2rem;
   margin: 1rem 0;
+}
+
+.workshop-info {
+  background-color: #DCDAC9;
+  width: 100%;
+  height: 25rem;
+  max-width: 1440px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.workshop-info h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  width: 20rem;
+}
+
+.workshop-info-container {
+    display: flex;
+    gap: 15rem;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.workshop-info-box {
+  flex: 1;
+  width: 50%;
+}
+
+.workshop-info-box p {
+  line-height: 1.6;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.workshop-info-box-schedule {
+  background-color: #f9f9f980;
+  border-radius: 1.5rem;
+  width: 25%;
+  text-align: center;
+  margin-top: -3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.workshop-info-box-schedule h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.workshop-info-box-schedule p {
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.saturday {
+  padding-top: 1rem;
 }

@@ -1,18 +1,15 @@
-
-
+import "./Header.css";
 
 function Header() {
-
-
-    return (        
-    <header>
-            <h1>Godsbanen</h1>
-    </header>
-    )
-
-
-
-
+  return (
+    <div className="header">
+      <img src="/images/godsbanenlogo.svg" alt="" />
+      <button className="burger-button" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  );
 }
 
 export default Header;
