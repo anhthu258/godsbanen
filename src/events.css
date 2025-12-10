@@ -1,0 +1,83 @@
+/* ---------------------------------------- ↓↓ Body section ↓↓ */
+.section-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ---------------------------------------- ↑↑ Body section ↑↑ */
+
+
+
+
+/* ---------------------------------------- ↓↓ Big picture section ↓↓ */
+figure.big-picture img {
+    width: 100%;
+}
+
+figure.big-picture {
+    position: relative;
+}
+
+.header-infobox {
+    position: absolute;
+    right: 50%;
+    left: 4%;
+    width: 36.5%;
+    bottom: 21%;
+    top: 18%;
+    background-color: #049CC9;
+    opacity: 95%;
+    padding: 2rem;
+}
+
+.header-infobox h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header-infobox p {
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+}
+/* ---------------------------------------- ↑↑ Big picture section ↑↑ */
+
+
+
+
+/* ---------------------------------------- ↓↓ Denne måned section ↓↓ */
+section.denne-måned {
+    background-color: #DCDAC9;
+    width: 95%;
+}
+
+section.denne-måned div figure img {
+    width: 10rem;
+}
+
+.denne-måned .section-bokse {
+    display: flex;
+}
+
+.denne-måned .section-bokse figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ---------------------------------------- ↑↑ Denne måned section ↑↑ */
+
+
+
+
+/* ---------------------------------------- ↓↓ Musik elskerer section ↓↓ */
+
+/* ---------------------------------------- ↑↑ Musik elskerer section ↑↑ */
+
+
+
+
+/* ---------------------------------------- ↓↓ Workshop section ↓↓ */
+
+/* ---------------------------------------- ↑↑ Workshop section ↑↑ */
