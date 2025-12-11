@@ -11,7 +11,7 @@
         "title": "Keramik",
         "description": "Vil du arbejde med ler og glasur? På Godsbanens Keramikværksted kan du forme alt fra kopper og kakler til skulpturer og unikke vaser. Alle er velkomne, både begyndere og erfarne. Vi stiller materialer og værktøj til rådighed, og vores medarbejdere hjælper dig godt i gang.",
         "image": "/images/keramik.png",
-        "link": "./pages/keramik.jsx"
+        "link": "/keramik"
     },
     {
         "id": 3,
