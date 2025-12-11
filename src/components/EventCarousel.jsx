@@ -57,12 +57,7 @@ function EventCarousel() {
       <aside className="carousel-track">
         {visibleEvents.map((event, idx) => (
           <div key={`${event.id}-${idx}`} className="carousel-item">
-            <a
-              href={event.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="event-link"
-            >
+            <a href={event.link} className="event-link">
               <img src={event.image} alt={event.title} />
               <div className="carousel-text">
                 <h2>{event.title}</h2>
