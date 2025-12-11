@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-.carousel-item {
+.event-carousel-item {
   flex: 1;
   max-width: 900px;
   min-width: 0;
@@ -31,11 +31,11 @@
   align-items: stretch;
 }
 
-.carousel-item:hover {
+.event-carousel-item:hover {
   transform: translateY(-5px);
 }
 
-.carousel-item img {
+.event-carousel-item img {
   width: 350px;
   height: 350px;
   object-fit: cover;
@@ -89,14 +89,17 @@
   display: contents;
 }
 
-.carousel-button {
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  transition: transform 0.2s ease, opacity 0.3s ease;
-  object-fit: contain;
-  background: none;
+.event-carousel-button {
   border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-button:hover {
