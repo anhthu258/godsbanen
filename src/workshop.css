@@ -27,7 +27,7 @@
 }
 
 .workshop-info {
-  background-color: #DCDAC9;
+  background-color: #dcdac9;
   width: 100%;
   height: 25rem;
   max-width: 1440px;
@@ -45,11 +45,11 @@
 }
 
 .workshop-info-container {
-    display: flex;
-    gap: 15rem;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  gap: 15rem;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 
 .workshop-info-box {

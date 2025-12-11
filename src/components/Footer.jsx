@@ -1,8 +1,8 @@
 import '../Footer.css';
 
-function Footer() {
+function Footer({ variant = 'default' }) {
     return (    
-        <footer className="footer">
+        <footer className={`footer footer--${variant}`}>
             <div>
                 <p>GODSBANEN</p>
                 <p>

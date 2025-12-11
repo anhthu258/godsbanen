@@ -97,7 +97,7 @@ function Workshop() {
         </div>
       </div>
 
-      <Footer></Footer>
+      <Footer variant="workshop"></Footer>
     </>
   );
 }
