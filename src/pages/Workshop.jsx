@@ -62,35 +62,35 @@ function Workshop() {
           <WorkshopTiles
             title="// METAL VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/wood.png"
+            imageSrc="/images/metal.jpg"
             buttonText="Læs Mere"
             reverse={true}
           />
           <WorkshopTiles
             title="// LASER VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/wood.png"
+            imageSrc="/images/laser.jpg"
             buttonText="Læs Mere"
             reverse={false}
           />
           <WorkshopTiles
             title="// TEKSTIL OG SERIGRAFI VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/wood.png"
+            imageSrc="/images/tryk.jpg"
             buttonText="Læs Mere"
             reverse={true}
           />
           <WorkshopTiles
             title="// SMYKKE VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/wood.png"
+            imageSrc="/images/smykke.jpg"
             buttonText="Læs Mere"
             reverse={false}
           />
           <WorkshopTiles
-            title="// GRAFISK VÆRKSTED //"
+            title="// KUNSTPRINT //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/wood.png"
+            imageSrc="/images/kunstprint.jpeg"
             buttonText="Læs Mere"
             reverse={true}
           />

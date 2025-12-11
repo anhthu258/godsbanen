@@ -1,12 +1,13 @@
 .header {
-  margin-left: 2rem;
-  margin-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
   position: relative;
+  background-color: #f9f9f9;
 }
 
 div.header img {
