@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: auto;
+  z-index: 1100;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  margin-bottom: -4rem;
+  margin-top: -5rem;
+}
+
+.burger-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 4rem;
+  z-index: 1200;
+  position: relative;
+}
+
+.burger-button span {
+  width: 4rem;
+  height: 0.4rem;
+  background-color: #e75346;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.98);
+  backdrop-filter: blur(8px);
+  padding: 6rem 2rem 2rem 2rem;
+  gap: 2rem;
+  z-index: 1050;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li a {
+  color: #333;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: block;
+  transition: background-color 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  background-color: #e75346;
+  color: white;
+  border-radius: 4px;
+}

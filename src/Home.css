@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #1e1e1e;
+    line-height: 1.6;
+}
+
+/* about section */
+.about{
+  background-image: url(/public/images/julemarked.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.about-text {
+  background-color: rgba(231, 83, 70, 0.639);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-text h2 {
+  color:#f9f9f9;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.about-text p {
+  color:#f9f9f9;
+  font-size: 1.1rem;
+}
+
+/* workshops section */
+.workshops {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.workshops h1 {
+  color: #e75346;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+.workshops a {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.workshops a:hover {
+  opacity: 0.8;
+}
+
+/* events section */
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #faccc7;
+}
+
+.events h1 {
+  color: #e75346;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+.events a {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.events a:hover {
+  opacity: 0.8;
+}
+
+/* restaurant section */
+.restaurant{
+  background-image: url(/public/images/restaurant.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.restaurant h1 {
+  color:#f9f9f9;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 20rem;
+  margin-right: 3.5rem;
+}
+
+.restaurant h1 span {
+  display: block;
+}
+
+.restaurant button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #f9f9f9;
+  background-color: #e75346;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.restaurant button p{
+  font-size: 1.5rem;
+}
+
+.restaurant button:hover {
+  background-color: #c6443a;
+  transform: scale(1.1);
+}
