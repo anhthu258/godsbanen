@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src="../public/images/godsbanenlogo.svg" alt="Godsbanen Logo" />
+        <img src="./images/godsbanenloge.svg" alt="Godsbanen Logo" />
       </div>
 
       <nav>
