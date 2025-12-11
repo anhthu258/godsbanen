@@ -5,6 +5,7 @@ function WorkshopTiles({
   description,
   imageSrc,
   buttonText = "Læs mere",
+  buttonLink,
   reverse = false,
 }) {
   return (
@@ -14,7 +15,13 @@ function WorkshopTiles({
           <h2 className="workshop-title">{title}</h2>
           <p className="workshop-description">{description}</p>
         </div>
-        <button className="workshop-button">{buttonText}</button>
+        {buttonLink ? (
+          <a className="workshop-button" href={buttonLink}>
+            {buttonText}
+          </a>
+        ) : (
+          <button className="workshop-button">{buttonText}</button>
+        )}
       </div>
       <div className="workshop-image-container">
         <img className="workshop-image" src={imageSrc} alt={title} />

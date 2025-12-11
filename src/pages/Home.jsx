@@ -60,7 +60,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <Footer variant="home"></Footer>
+      <Footer variant="red"></Footer>
     </>
   );
 }

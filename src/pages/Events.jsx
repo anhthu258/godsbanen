@@ -171,7 +171,7 @@ function Events() {
         </section>
       </div>
 
-      <Footer variant="events"></Footer>
+      <Footer variant="blue"></Footer>
     </>
   );
 }

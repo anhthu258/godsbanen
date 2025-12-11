@@ -117,18 +117,18 @@
 }
 
 /* Footer color variants */
-.footer--default {
+.footer--pink {
   background-color: #faccc7;
 }
 
-.footer--home {
+.footer--red {
   background-color: #e75346;
 }
 
-.footer--events {
+.footer--blue {
   background-color: #049cc9;
 }
 
-.footer--workshop {
+.footer--green {
   background-color: #00a870;
 }

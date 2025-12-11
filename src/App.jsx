@@ -5,6 +5,7 @@ import Workshop from './pages/Workshop';
 import Events from './pages/Events';
 import Home from './pages/Home';
 import Error from './pages/Error';
+import Keramik from './pages/keramik';
 
 function App() { 
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/workshop" element={<Workshop/>} />
           <Route path="/events" element={<Events/>} />
+          <Route path="/keramik" element={<Keramik/>} />
           <Route path="*" element={<Error/>} />
         </Routes>
       </BrowserRouter>
