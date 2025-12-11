@@ -96,7 +96,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 0.5rem;
+}
+
+.footer .logo-footer img {
+  max-width: 200px;
+  width: 13rem;
+  height: auto;
 }
 
 /* Responsive design */

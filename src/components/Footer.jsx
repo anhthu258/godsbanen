@@ -2,7 +2,7 @@ import '../Footer.css';
 
 function Footer({ variant = 'default', logoVariant = 'default' }) {
     const logoByVariant = {
-        white: '/images/g-logo-white.png',
+        default: '/images/g-logo-white.png',
         red: '/images/g-logo-red.png',
     };
     const logoSrc = logoByVariant[logoVariant] || logoByVariant.default;
