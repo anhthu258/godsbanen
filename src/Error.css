@@ -1,11 +1,18 @@
 .error-container {
-    text-align: center;
+    text-align: left;
     padding: 50px;
+    min-height: 80vh;
+    background: url("/images/404-background-big.png") center no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    overflow: hidden;
 }
 
 .error-container h1 {
     font-size: 10rem;
-    margin-bottom: 20px;
     color: #e75346;
 }
 
@@ -14,3 +21,51 @@
     color: #1e1e1e;
 }
 
+.error-container div{
+    max-width: 600px;
+    margin: auto;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-decoration: none;
+    z-index: 100;
+    position: relative;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.back-button img {
+    width: 350px;
+    height: auto;
+    display: block;
+}
+
+.back-button-label {
+    position: absolute;
+    left: 39%;
+    top: -2.4rem;
+    transform: translateX(-50%);
+    color: #f9f9f9;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.error-container > img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: auto;
+    z-index: 0;
+}
