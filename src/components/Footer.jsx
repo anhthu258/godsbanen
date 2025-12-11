@@ -1,6 +1,11 @@
 import '../Footer.css';
 
-function Footer({ variant = 'default' }) {
+function Footer({ variant = 'default', logoVariant = 'default' }) {
+    const logoByVariant = {
+        white: '/images/g-logo-white.png',
+        red: '/images/g-logo-red.png',
+    };
+    const logoSrc = logoByVariant[logoVariant] || logoByVariant.default;
     return (    
         <footer className={`footer footer--${variant}`}>
             <div>
@@ -15,7 +20,7 @@ function Footer({ variant = 'default' }) {
                 <a href="https://godsbanen.dk/privatlivs-politik/">Privatlivspolitik</a>
             </div>
             <div className="logo-footer">
-                <img src="/images/g-logo-white.png" alt="Godsbanen Logo" />
+                <img src={logoSrc} alt="Godsbanen Logo" />
             </div>
             <div className="follow">
                 <aside>
