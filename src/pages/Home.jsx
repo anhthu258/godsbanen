@@ -8,7 +8,7 @@ import "../Home.css";
 export default function Home() {
   return (
     <>
-      <Header></Header>
+      <Header variant="red"></Header>
       <section className="about">
         <aside className="about-text">
           <div>

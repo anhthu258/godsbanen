@@ -6,7 +6,7 @@ import "../Error.css";
 export default function Error() {
     return (
         <>
-        <Header></Header>
+        <Header variant="red"></Header>
             <section className="error-container">
                 <div>
                     <p>

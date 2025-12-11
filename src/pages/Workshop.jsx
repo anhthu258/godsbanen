@@ -8,7 +8,7 @@ import "../workshop.css";
 function Workshop() {
   return (
     <>
-      <Header></Header>
+      <Header variant="green"></Header>
 
       <div className="parallax-container">
         <div>

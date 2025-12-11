@@ -6,7 +6,7 @@ import "../Keramik.css";
 function Keramik() {
   return (
     <>
-      <Header></Header>
+      <Header variant="green"></Header>
 
       <div>
         <div className="practicalinfobox">
@@ -97,7 +97,7 @@ function Keramik() {
         </div>
         <div className="opportunities">
           <h2 className="opptitle">NOGLE AF MULIGHEDERNE:</h2>
-          <ul>
+          <ul className="keramiklist">
             <li>Mange forskellige typer ler, men kun stentøjsler/porcelæn.</li>
             <li>Gipsforme, som man kan låne, og støbe i med porcelæn og/eller stentøjs-støbeler, og andre forme man kan kvætse i.</li>
             <li>Seks elektriske drejeskiver og en ekstruder.</li>

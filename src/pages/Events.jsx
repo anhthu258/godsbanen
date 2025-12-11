@@ -5,7 +5,7 @@ import "../events.css";
 function Events() {
   return (
     <>
-      <Header></Header>
+      <Header variant="blue"></Header>
 
       <div className="section-body">
         <figure className="big-picture">

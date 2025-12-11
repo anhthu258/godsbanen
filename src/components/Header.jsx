@@ -2,7 +2,7 @@ import "../Header.css";
 import { Link } from "react-router";
 import { useState } from "react";
 
-function Header() {
+function Header({ variant = "default" }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -14,9 +14,9 @@ function Header() {
   };
 
   return (
-    <header className="header">
+    <header className={`header header--${variant}`}>
       <div className="logo">
-        <img src="./images/godsbanenloge.svg" alt="Godsbanen Logo" />
+        <img src="./images/godsbanenlogo.svg" alt="Godsbanen Logo" />
       </div>
 
       <nav>
