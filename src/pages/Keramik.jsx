@@ -107,7 +107,7 @@ function Keramik() {
         </div>
       </div>
 
-      <Footer variant="green"></Footer>
+      <Footer variant="white"></Footer>
     </>
   );
 }
