@@ -29,6 +29,7 @@ function Header() {
           <li><Link to="/" onClick={closeMenu}>Hjem</Link></li>
           <li><Link to="/workshop" onClick={closeMenu}>Værksteder</Link></li>
           <li><Link to="/events" onClick={closeMenu}>Events</Link></li>
+          <li><Link to="/booking" onClick={closeMenu}>Booking</Link></li>
         </ul>
       </nav>
     </header>
