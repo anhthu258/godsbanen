@@ -33,15 +33,17 @@ export default function Home() {
       </section>
 
       <section className="workshops">
-        <Link to="/workshop">
+        <Link to="/workshop" className="section-link">
           <h1>VÆRKSTEDER</h1>
+          <img src="/images/pil.svg" alt="pil" />
         </Link>
         <WorkshopCarousel />
       </section>
 
       <section className="events">
-        <Link to="/events">
+        <Link to="/events" className="section-link">
           <h1>DET DER SKER</h1>
+          <img src="/images/pil.svg" alt="pil" />
         </Link>
         <EventCarousel />
       </section>
@@ -60,6 +62,9 @@ export default function Home() {
           </a>
         </div>
       </section>
+      <div className="back-to-top" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+        <img src="/images/arrow-circle-up.svg" alt="back to the top" />
+      </div>
       <Footer variant="red"></Footer>
     </>
   );
