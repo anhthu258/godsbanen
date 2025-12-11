@@ -9,10 +9,10 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   background-color: #faccc7;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .footer a:hover {
-  color: #e75346;
+  color: #faccc7;
   text-decoration: underline;
 }
 
@@ -104,7 +104,7 @@
   .footer {
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1.25rem 1.5rem;
   }
 
   .footer > div {

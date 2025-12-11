@@ -15,7 +15,7 @@ function Footer({ variant = 'default' }) {
                 <a href="https://godsbanen.dk/privatlivs-politik/">Privatlivspolitik</a>
             </div>
             <div className="logo-footer">
-                <img src="/images/g-logo.png" alt="Godsbanen Logo" />
+                <img src="/images/g-logo-white.png" alt="Godsbanen Logo" />
             </div>
             <div className="follow">
                 <aside>
