@@ -49,14 +49,14 @@ function EventCarousel() {
       <img 
         src="/images/arrow-left.svg" 
         alt="Tilbage" 
-        className="carousel-button prev"
+        className="event-carousel-button prev"
         onClick={prevSlide}
       />
 
       {/* Sørge for at der kun vises 1 event af gangen */}
       <aside className="carousel-track">
         {visibleEvents.map((event, idx) => (
-          <div key={`${event.id}-${idx}`} className="carousel-item">
+          <div key={`${event.id}-${idx}`} className="event-carousel-item">
             <a href={event.link} className="event-link">
               <img src={event.image} alt={event.title} />
               <div className="carousel-text">
@@ -74,7 +74,7 @@ function EventCarousel() {
       <img 
         src="/images/arrow-right.svg" 
         alt="Næste" 
-        className="carousel-button next"
+        className="event-carousel-button next"
         onClick={nextSlide}
       />
     </section>
