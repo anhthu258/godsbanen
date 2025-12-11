@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Kunstudstilling",
         "description": "En spændende kunstudstilling med værker fra lokale kunstnere. Kom og bliv inspireret af kreativitet og innovation.",
-        "image": "/images/event1.jpg",
+        "image": "/images/a-piece-of-land.png",
         "date": "15. december 2024",
         "time": "10:00 - 18:00",
         "link": "#"
@@ -12,7 +12,7 @@
         "id": 2,
         "title": "Live koncert",
         "description": "En magisk aften med live musik fra dygtige musikere. Nyd god underholdning og fantastisk stemning.",
-        "image": "/images/event2.jpg",
+        "image": "/images/kaare.jpg",
         "date": "20. december 2024",
         "time": "19:00 - 22:00",
         "link": "#"
@@ -21,7 +21,7 @@
         "id": 3,
         "title": "Workshop: Håndværk",
         "description": "Lær traditionelle håndværksteknikker fra erfarne håndværkere. Perfekt for både begyndere og øvede.",
-        "image": "/images/event3.jpg",
+        "image": "/images/monoxundervejs.png",
         "date": "22. december 2024",
         "time": "14:00 - 17:00",
         "link": "#"
@@ -30,27 +30,9 @@
         "id": 4,
         "title": "Marked & Julefest",
         "description": "Hyggelig julemarked med lokale producenter, lækker mad og festlig stemning. Det perfekte sted at få julestemningen.",
-        "image": "/images/event4.jpg",
+        "image": "/images/smykke-i-soelv.jpg",
         "date": "23. december 2024",
         "time": "11:00 - 20:00",
-        "link": "#"
-    },
-    {
-        "id": 5,
-        "title": "Teaterforestilling",
-        "description": "En klassisk teaterforestilling på Godsbanen. Lad dig underholde af talentfulde skuespillere.",
-        "image": "/images/event5.jpg",
-        "date": "27. december 2024",
-        "time": "19:30 - 21:30",
-        "link": "#"
-    },
-    {
-        "id": 6,
-        "title": "Design Talks",
-        "description": "Spændende foredrag om moderne design og kreativ tænkning. Perfekt for designinteresserede.",
-        "image": "/images/event6.jpg",
-        "date": "29. december 2024",
-        "time": "18:00 - 20:00",
         "link": "#"
     }
 ]
