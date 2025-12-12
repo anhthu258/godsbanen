@@ -1,6 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MonthCarousel from "../components/MonthCarousel.jsx";
+import MusicCarousel from "../components/MusicCarousel.jsx";
+import WorkshopCarousel from "../components/WorkshopCarousel.jsx";
 import "../events.css";
 
 function Events() {
@@ -35,142 +37,20 @@ function Events() {
         </div>
 
         <MonthCarousel></MonthCarousel>
-        {/* <section className="denne-måned">
-          <div className="section-bokse">
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-          </div>
-        </section> */}
+       
 
         <div className="overskrift">
           <h1>TIL MUSIK ELSKERER</h1>
         </div>
 
-        <section className="musik-elskere">
-          <div className="section-bokse">
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-          </div>
-        </section>
+        <MusicCarousel></MusicCarousel>
 
         <div className="overskrift">
           <h1>VORES WORKSHOP</h1>
         </div>
-
-        <section className="vores-workshop">
-          <div className="section-bokse">
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-
-            <figure>
-              <img src="../images/a-piece-of-land.png" alt="" />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-                voluptate perferendis accusamus dolore totam qui, fugit
-                cupiditate obcaecati sit sed nostrum officia error nam, adipisci
-                debitis nemo quidem! Aliquid, accusamus.
-              </p>
-
-              <button>Læs Mere</button>
-            </figure>
-          </div>
-        </section>
+    
+        <WorkshopCarousel></WorkshopCarousel>
+        
       </div>
 
       <Footer variant="blue"></Footer>

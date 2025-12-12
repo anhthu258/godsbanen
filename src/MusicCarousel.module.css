@@ -1,0 +1,170 @@
+.eventCarousel {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.carouselTrack {
+  display: flex;
+  justify-content: center;
+}
+
+
+.eventCarouselItem {
+    display: flex;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    gap: 2rem;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.eventCarouselItem:hover {
+    transform: translateY(-5px);
+}
+
+.eventCarouselItem img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.carouselText {
+    flex: 1;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.carouselText h2 {
+    color: #e75346;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.eventDate {
+    color: #666;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.eventTime {
+    color: #888;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    }
+
+.eventDescription {
+    color: #1e1e1e;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.eventLink {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+
+.readMore {
+    background-color: #049CC9;
+    color: #f9f9f9;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: #333 0rem 0.4rem 0.6rem -0.1rem;
+}
+
+.eventCarouselButton {
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carouselButton:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .carouselItem {
+    gap: 1.5rem;
+  }
+
+  .carouselItem img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .carouselText h2 {
+    font-size: 1.5rem;
+  }
+
+  .eventDescription {
+    font-size: 0.95rem;
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .eventCarousel {
+    gap: 1rem;
+  }
+
+  .carouselItem {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .carouselItem img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .carouselText h2 {
+    font-size: 1.3rem;
+  }
+
+  .eventDate {
+    font-size: 0.9rem;
+  }
+
+  .eventDescription {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 3;
+  }
+
+  .carouselButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
