@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../EventCarousel.css';
+import classes from '../EventCarousel.module.css';
 
 function EventCarousel() {
   const [events, setEvents] = useState([]);
@@ -44,26 +44,26 @@ function EventCarousel() {
   const visibleEvents = getVisibleEvents();
 
   return (
-    <section className="event-carousel">
+    <section className={`${classes.eventCarousel}`}>
       {/* Tilbage button */}
       <img 
         src="/images/arrow-left.svg" 
         alt="Tilbage" 
-        className="event-carousel-button prev"
+        className={`${classes.eventCarouselButton}`}
         onClick={prevSlide}
       />
 
       {/* Sørge for at der kun vises 1 event af gangen */}
-      <aside className="carousel-track">
+      <aside className={`${classes.carouselTrack}`}>
         {visibleEvents.map((event, idx) => (
-          <div key={`${event.id}-${idx}`} className="event-carousel-item">
-            <a href={event.link} className="event-link">
+          <div key={`${event.id}-${idx}`} className={`${classes.eventCarouselItem}`}>
+            <a href={event.link} className={`${classes.eventLink}`}>
               <img src={event.image} alt={event.title} />
-              <div className="carousel-text">
+              <div className={`${classes.carouselText}`}>
                 <h2>{event.title}</h2>
-                <p className="event-date">{event.date}</p>
-                <p className="event-time">{event.time}</p>
-                <p className="event-description">{event.description}</p>
+                <p className={`${classes.eventDate}`}>{event.date}</p>
+                <p className={`${classes.eventTime}`}>{event.time}</p>
+                <p className={`${classes.eventDescription}`}>{event.description}</p>
               </div>
             </a>
           </div>
@@ -74,7 +74,7 @@ function EventCarousel() {
       <img 
         src="/images/arrow-right.svg" 
         alt="Næste" 
-        className="event-carousel-button next"
+        className={`${classes.eventCarouselButton}`}
         onClick={nextSlide}
       />
     </section>
