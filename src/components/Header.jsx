@@ -15,9 +15,9 @@ function Header({ variant = "default" }) {
 
   return (
     <header className={`header header--${variant}`}>
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src="./images/godsbanenlogo.svg" alt="Godsbanen Logo" />
-      </div>
+      </Link>
 
       <nav>
         <button className="burger-button" aria-label="Menu" onClick={toggleMenu}>
