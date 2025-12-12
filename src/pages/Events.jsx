@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MonthCarousel from "../components/MonthCarousel.jsx";
 import "../events.css";
 
 function Events() {
@@ -33,7 +34,8 @@ function Events() {
           <h1>DENNE MÅNED</h1>
         </div>
 
-        <section className="denne-måned">
+        <MonthCarousel></MonthCarousel>
+        {/* <section className="denne-måned">
           <div className="section-bokse">
             <figure>
               <img src="../images/a-piece-of-land.png" alt="" />
@@ -74,7 +76,7 @@ function Events() {
               <button>Læs Mere</button>
             </figure>
           </div>
-        </section>
+        </section> */}
 
         <div className="overskrift">
           <h1>TIL MUSIK ELSKERER</h1>

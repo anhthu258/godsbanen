@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import classes from '../EventCarousel.module.css';
+import classes from '../MonthCarousel.module.css';
 
 function EventCarousel() {
   const [events, setEvents] = useState([]);
@@ -34,7 +34,9 @@ function EventCarousel() {
   // Anvend modulo for at looppe rundt i arrayet
   const getVisibleEvents = () => {
     const visible = [];
-    for (let i = 0; i < 1; i++) {
+    const displayCount = 3; // Antal events der skal vises samtidigt
+    
+    for (let i = 0; i < displayCount; i++) {
       const index = (currentIndex + i) % events.length;
       visible.push(events[index]);
     }
@@ -49,7 +51,7 @@ function EventCarousel() {
       <img 
         src="/images/arrow-left.svg" 
         alt="Tilbage" 
-        className={`${classes.eventCarouselButton} ${classes.prev}`}
+        className={`${classes.eventCarouselButton}`}
         onClick={prevSlide}
       />
 
@@ -65,6 +67,7 @@ function EventCarousel() {
                 <p className={`${classes.eventTime}`}>{event.time}</p>
                 <p className={`${classes.eventDescription}`}>{event.description}</p>
               </div>
+              <button className={`${classes.readMore}`}>Læs Mere</button>
             </a>
           </div>
         ))}
@@ -74,7 +77,7 @@ function EventCarousel() {
       <img 
         src="/images/arrow-right.svg" 
         alt="Næste" 
-        className={`${classes.eventCarouselButton} ${classes.next}`}
+        className={`${classes.eventCarouselButton}`}
         onClick={nextSlide}
       />
     </section>
