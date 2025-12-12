@@ -80,14 +80,14 @@
 .header--red {
   --nav-bg: #e75346;
   --nav-text: #f9f9f9;
-  --nav-hover-text: #333;
+  --nav-hover-text: #1e1e1e;
   --burger-color: #e75346;
 }
 
 .header--green {
   --nav-bg: #00a870;
   --nav-text: #f9f9f9;
-  --nav-hover-text: #333;
+  --nav-hover-text: #1e1e1e;
   --burger-color: #00a870;
 }
 
@@ -96,4 +96,11 @@
   --nav-text: #f9f9f9;
   --nav-hover-text: #333;
   --burger-color: #049cc9;
+}
+
+.header--beige {
+  --nav-bg: #e7e6dd;
+  --nav-text: #1e1e1e;
+  --nav-hover-text: #f9f9f9;
+  --burger-color: #1e1e1e;
 }

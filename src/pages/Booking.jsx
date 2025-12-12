@@ -1,14 +1,20 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import "../Booking.css";
 
 export default function Booking(){
     return (
         <>
-        <Header></Header>
-        <section className="booking-page">
-            <h1>Placeholder</h1>
+        <Header variant="beige"></Header>
+        <section className="teaser">
+            <h1>BOOKING</h1>
         </section>
-        <Footer></Footer>
+        <section className="booking-content">
+            <aside>
+                <p>  </p>
+            </aside>
+        </section>
+        <Footer variant="beige"></Footer>
         </>
     );
 }
