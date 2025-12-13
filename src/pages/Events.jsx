@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MonthCarousel from "../components/MonthCarousel.jsx";
 import MusicCarousel from "../components/MusicCarousel.jsx";
-import WorkshopCarousel from "../components/WorkshopCarousel.jsx";
+import EventWorkshopCarousel from "../components/EventWorkshopCarousel.jsx";
 import "../events.css";
 
 function Events() {
@@ -49,7 +49,7 @@ function Events() {
           <h1>VORES WORKSHOP</h1>
         </div>
     
-        <WorkshopCarousel></WorkshopCarousel>
+        <EventWorkshopCarousel></EventWorkshopCarousel>
         
       </div>
 

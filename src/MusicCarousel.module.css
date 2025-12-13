@@ -1,17 +1,15 @@
 .eventCarousel {
-    position: relative;
     width: 95%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
+    background: #dcdac9;
     justify-content: center;
-    gap: 2rem;
-    padding: 0 1rem;
+    padding: 1rem 0rem;
 }
 
 .carouselTrack {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -23,6 +21,8 @@
     gap: 2rem;
     align-items: flex-end;
     flex-direction: column;
+    margin: 0rem 1rem;
+    height: 42rem;
 }
 
 .eventCarouselItem:hover {
@@ -30,8 +30,8 @@
 }
 
 .eventCarouselItem img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 0;
@@ -40,11 +40,11 @@
 
 .carouselText {
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 300px;
 }
 
 .carouselText h2 {
@@ -95,16 +95,9 @@
 }
 
 .eventCarouselButton {
-    border: none;
-    font-size: 2rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 50%;
     width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .carouselButton:hover {

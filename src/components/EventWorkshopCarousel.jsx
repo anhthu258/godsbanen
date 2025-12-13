@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import classes from '../MonthCarousel.module.css';
+import classes from '../EventWorkshopCarousel.module.css';
 
 function EventCarousel() {
   const [events, setEvents] = useState([]);
@@ -7,7 +7,7 @@ function EventCarousel() {
 
   // Afhent eventdata fra JSON-fil ved komponent-mount
   useEffect(() => {
-    fetch('/data/month.json')
+    fetch('/data/vaerksted.json')
       .then(response => response.json())
       .then(data => setEvents(data))
       .catch(error => console.error('Error loading events:', error));
@@ -48,7 +48,6 @@ function EventCarousel() {
   return (
     <section className={`${classes.eventCarousel}`}>
       {/* Tilbage button */}
-      
       <img 
         src="/images/arrow-left.svg" 
         alt="Tilbage" 

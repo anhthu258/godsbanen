@@ -7,7 +7,7 @@ function EventCarousel() {
 
   // Afhent eventdata fra JSON-fil ved komponent-mount
   useEffect(() => {
-    fetch('/data/events.json')
+    fetch('/data/music.json')
       .then(response => response.json())
       .then(data => setEvents(data))
       .catch(error => console.error('Error loading events:', error));
