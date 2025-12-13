@@ -53,6 +53,10 @@ function Events() {
         
       </div>
 
+      <div className="back-to-top" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+        <img src="/images/arrow-circle-up.svg" alt="back to the top" />
+      </div>
+      
       <Footer variant="blue"></Footer>
     </>
   );
