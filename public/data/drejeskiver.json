@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "Navn": "Drejeskive 1",
+        "tidspunkt": "10:00 - 11:00",
+        "tlfnr": "12345678"},
+    {
+        "id": 2,
+        "Navn": "Drejeskive 2",
+        "tidspunkt": "11:00 - 12:00",
+        "tlfnr": "23456789"},
+    {
+        "id": 3,
+        "Navn": "Drejeskive 3",
+        "tidspunkt": "12:00 - 13:00",
+        "tlfnr": "34567890"},
+    {
+        "id": 4,
+        "Navn": "Drejeskive 4",
+        "tidspunkt": "13:00 - 14:00",
+        "tlfnr": "45678901"},
+    {
+        "id": 5,
+        "Navn": "Drejeskive 5",
+        "tidspunkt": "14:00 - 15:00",
+        "tlfnr": "56789012"},
+    {
+        "id": 6,
+        "Navn": "Drejeskive 6",
+        "tidspunkt": "15:00 - 16:00",
+        "tlfnr": "67890123"}
+]
