@@ -1,15 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig(({ command }) => {
-  const config = {
-    plugins: [react()],
-    base: "/"
-  };
-
-  if (command !== "serve") {
-    config.base = "/godsbanen/";
-  }
-
-  return config;
-});
+// https://vite.dev/config/
+export default defineConfig({
+  base: '/godsbanen/',
+  plugins: [react(), tailwindcss()],
+})
