@@ -25,6 +25,7 @@ export default function Booking() {
     // UI toggles
     const [showConfirmation, setShowConfirmation] = useState(false);
     const [showCalendar, setShowCalendar] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     // Reference til Firestore-collection
     const ref = collection(firestore, "bookings");
@@ -104,6 +105,8 @@ export default function Booking() {
             return;
         }
 
+        setIsSubmitting(true);
+
         const newReservation = {
             date: selectedDate.toDateString(),
             time: selectedTime,
@@ -117,14 +120,23 @@ export default function Booking() {
         try {
             await addDoc(ref, newReservation);
             
-            // Reset form and show confirmation
+            // Nulstil formularen og refs
             setFormData({ name: "", email: "", phone: "" });
             setSelectedTime("");
+            nameRef.current.value = "";
+            emailRef.current.value = "";
+            phoneRef.current.value = "";
+            
+            // Vis bekræftelsesmeddelelse
             setShowConfirmation(true);
             setTimeout(() => setShowConfirmation(false), 5000);
+            
+            console.log("✓ Booking gemt og tidsslot markeret som reserveret");
         } catch (error) {
-            console.error("Error adding document: ", error);
+            console.error("Fejl ved gemning: ", error);
             alert("Der opstod en fejl. Prøv venligst igen.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -320,8 +332,8 @@ export default function Booking() {
                             />
                         </div>
 
-                        <button type="submit" className="submit-btn">
-                            Bekræft Booking
+                        <button type="submit" className="submit-btn" disabled={isSubmitting}>
+                            {isSubmitting ? "Gemmer..." : "Bekræft Booking"}
                         </button>
                     </form>
 

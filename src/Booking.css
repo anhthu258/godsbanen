@@ -460,6 +460,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.submit-btn:disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.7;
+}
+
+.submit-btn:disabled:hover {
+    background: #ccc;
+    box-shadow: none;
+}
+
 .booking-info {
     margin-top: 2rem;
     padding: 1.5rem;
