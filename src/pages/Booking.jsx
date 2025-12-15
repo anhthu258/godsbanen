@@ -7,20 +7,29 @@ import React, { useRef } from "react";
 import "../Booking.css";
 
 export default function Booking() {
+    // UI-state: valgt dato/tid/ressource
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [selectedTime, setSelectedTime] = useState("");
     const [selectedResource, setSelectedResource] = useState("drejeskive");
+
+    // Data-state: bookinger fra Firestore
     const [reservations, setReservations] = useState([]);
+
+    // Form-state til inputfelter
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         phone: ""
     });
-    const [showConfirmation, setShowConfirmation] = useState(false);
 
+    // UI toggles
+    const [showConfirmation, setShowConfirmation] = useState(false);
+    const [showCalendar, setShowCalendar] = useState(false);
+
+    // Reference til Firestore-collection
     const ref = collection(firestore, "bookings");
 
-    // Load reservations from Firebase
+    // Henter eksisterende bookinger live fra Firestore
     useEffect(() => {
         const unsubscribe = onSnapshot(ref, (snapshot) => {
             const bookingsData = snapshot.docs.map(doc => ({
@@ -33,13 +42,13 @@ export default function Booking() {
         return () => unsubscribe();
     }, []);
 
-    // Time slots available for booking
+    // Standard tidsintervaller
     const timeSlots = [
         "10:00", "11:00", "12:00", 
         "13:00", "14:00", "15:00"
     ];
 
-    // Get current week dates
+    // Beregn den aktuelle uge (mandag -> lørdag)
     const getWeekDates = () => {
         const curr = new Date(selectedDate);
         const week = [];
@@ -56,14 +65,21 @@ export default function Booking() {
 
     const weekDates = getWeekDates();
 
-    // Navigate week
+    // Skift uge med +/− 7 dage
     const changeWeek = (direction) => {
         const newDate = new Date(selectedDate);
         newDate.setDate(selectedDate.getDate() + (direction * 7));
         setSelectedDate(newDate);
     };
 
-    // Check if time slot is available
+    // Skift én dag frem eller tilbage
+    const changeDay = (direction) => {
+        const newDate = new Date(selectedDate);
+        newDate.setDate(selectedDate.getDate() + direction);
+        setSelectedDate(newDate);
+    };
+
+    // Tjek om et tidsinterval er ledigt for en ressource på en given dato
     const isAvailable = (date, time, resource) => {
         const dateStr = date.toDateString();
         return !reservations.some(
@@ -71,7 +87,7 @@ export default function Booking() {
         );
     };
 
-    // Handle form input
+    // Opdater lokal form-state ved tasteinput
     const handleInputChange = (e) => {
         setFormData({
             ...formData,
@@ -79,7 +95,7 @@ export default function Booking() {
         });
     };
 
-    // Submit booking
+    // Gem booking i Firestore og opdater UI
     const handleSubmit = async (e) => {
         e.preventDefault();
         
@@ -112,12 +128,12 @@ export default function Booking() {
         }
     };
 
-    // Get capacity for resource
+    // Kapacitet pr. ressource (drejeskive vs. arbejdsborde)
     const getCapacity = (resource) => {
         return resource === "drejeskive" ? 6 : 8;
     };
 
-    // Get available spots for a time slot
+    // Beregner ledige pladser for en given tid, dato og ressource
     const getAvailableSpots = (date, time, resource) => {
         const dateStr = date.toDateString();
         const booked = reservations.filter(
@@ -134,6 +150,7 @@ export default function Booking() {
         return date.toLocaleDateString('da-DK', { weekday: 'short' });
     };
 
+    // Refs til formfelter (bruges når vi skriver til Firestore)
     const nameRef = useRef();
     const emailRef = useRef();
     const phoneRef = useRef();
@@ -146,51 +163,93 @@ export default function Booking() {
             </section>
             
             <section className="booking-content">
-                {/* Calendar */}
+                {/* Single Day View */}
                 <aside className="calendar">
-                    {/* Week Navigation */}
-                    <div className="week-nav">
-                        <button onClick={() => changeWeek(-1)}>← 1 uge</button>
-                        <button onClick={() => changeWeek(0)}>I dag</button>
-                        <button onClick={() => changeWeek(1)}>1 uge →</button>
+                    <div className="calendar-header">
+                        <button className="calendar-toggle-btn" onClick={() => setShowCalendar(!showCalendar)}>
+                            <img src="./images/calendar.svg" alt="Kalender ikon" /> Vælg Dato
+                        </button>
+                        <h2>{selectedDate.toLocaleDateString('da-DK', { weekday: 'long', day: 'numeric', month: 'long' })}</h2>
                     </div>
-                    <h2>Vælg Dato & Tid</h2>
-                    <div className="week-grid">
-                        {weekDates.map((date, index) => (
-                            <div 
-                                key={index}
-                                className={`day-column ${selectedDate.toDateString() === date.toDateString() ? 'selected' : ''}`}
-                                onClick={() => setSelectedDate(date)}
-                            >
-                                <div className="day-header">
-                                    <strong>{getDayName(date)}</strong>
-                                    <span>{formatDate(date)}</span>
-                                </div>
-                                <div className="time-slots">
-                                    {timeSlots.map(time => {
-                                        const spots = getAvailableSpots(date, time, selectedResource);
-                                        const available = spots > 0;
-                                        return (
-                                            <button
-                                                key={time}
-                                                className={`time-slot ${selectedDate.toDateString() === date.toDateString() && selectedTime === time ? 'selected-time' : ''} ${!available ? 'unavailable reserved' : ''}`}
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    setSelectedDate(date);
-                                                    if (available) setSelectedTime(time);
-                                                }}
-                                                disabled={!available}
-                                            >
-                                                {time}
-                                                <span className="spots">{available ? `${spots} ledige` : 'Reserveret'}</span>
-                                            </button>
-                                        );
-                                    })}
-                                </div>
-                            </div>
-                        ))}
+
+                    {/* Day Navigation */}
+                    <div className="day-nav">
+                        <button onClick={() => changeDay(-1)}>← Forrige dag</button>
+                        <button onClick={() => setSelectedDate(new Date())}>I dag</button>
+                        <button onClick={() => changeDay(1)}>Næste dag →</button>
+                    </div>
+
+                    {/* Time Slots for Selected Day */}
+                    <div className="time-slots-list">
+                        <h3>Tilgængelige tider</h3>
+                        {timeSlots.map(time => {
+                            const spots = getAvailableSpots(selectedDate, time, selectedResource);
+                            const available = spots > 0;
+                            return (
+                                <button
+                                    key={time}
+                                    className={`time-slot-item ${selectedTime === time ? 'selected-time' : ''} ${!available ? 'unavailable reserved' : ''}`}
+                                    onClick={() => {
+                                        if (available) setSelectedTime(time);
+                                    }}
+                                    disabled={!available}
+                                >
+                                    <span className="time">{time}</span>
+                                    <span className="spots">{available ? `${spots} ledige` : 'Reserveret'}</span>
+                                </button>
+                            );
+                        })}
                     </div>
                 </aside>
+
+                {/* Calendar Modal */}
+                {showCalendar && (
+                    <div className="calendar-modal" onClick={() => setShowCalendar(false)}>
+                        <div className="calendar-modal-content" onClick={(e) => e.stopPropagation()}>
+                            <div className="modal-header">
+                                <h3>Vælg Dato</h3>
+                                <button className="close-btn" onClick={() => setShowCalendar(false)}>✕</button>
+                            </div>
+                            <div className="week-nav">
+                                <button onClick={() => changeWeek(-1)}>← 1 uge</button>
+                                <button onClick={() => changeWeek(0)}>I dag</button>
+                                <button onClick={() => changeWeek(1)}>1 uge →</button>
+                            </div>
+                            <div className="week-grid">
+                                {weekDates.map((date, index) => (
+                                    <div 
+                                        key={index}
+                                        className={`day-column ${selectedDate.toDateString() === date.toDateString() ? 'selected' : ''}`}
+                                        onClick={() => {
+                                            setSelectedDate(date);
+                                            setShowCalendar(false);
+                                        }}
+                                    >
+                                        <div className="day-header">
+                                            <strong>{getDayName(date)}</strong>
+                                            <span>{formatDate(date)}</span>
+                                        </div>
+                                        <div className="time-slots">
+                                            {timeSlots.map(time => {
+                                                const spots = getAvailableSpots(date, time, selectedResource);
+                                                const available = spots > 0;
+                                                return (
+                                                    <div
+                                                        key={time}
+                                                        className={`time-slot ${!available ? 'unavailable reserved' : ''}`}
+                                                    >
+                                                        {time}
+                                                        <span className="spots">{available ? `${spots}` : '✕'}</span>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 {/* Booking Form */}
                 <aside className="booking-form-section">
@@ -202,10 +261,10 @@ export default function Booking() {
                             Drejeskive (6 pladser)
                         </button>
                         <button 
-                            className={selectedResource === "sidepladser" ? "active" : ""}
-                            onClick={() => setSelectedResource("sidepladser")}
+                            className={selectedResource === "arbejdsborde" ? "active" : ""}
+                            onClick={() => setSelectedResource("arbejdsborde")}
                         >
-                            Sidepladser (8 pladser)
+                            Arbejdsborde (8 pladser)
                         </button>
                     </div>
 
@@ -216,7 +275,7 @@ export default function Booking() {
                     )}
 
                     <form onSubmit={handleSubmit} className="booking-form">
-                        <h3>Book {selectedResource === "drejeskive" ? "Drejeskive" : "Sidepladser"}</h3>
+                        <h3>Book {selectedResource === "drejeskive" ? "Drejeskive" : "Arbejdsborde"}</h3>
                         
                         <div className="selected-info">
                             <p><strong>Dato:</strong> {selectedDate.toLocaleDateString('da-DK')}</p>
