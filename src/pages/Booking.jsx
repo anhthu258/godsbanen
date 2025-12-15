@@ -40,7 +40,7 @@ export default function Booking() {
         // Get Monday of current week
         const first = curr.getDate() - curr.getDay() + 1;
         
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 6; i++) {
             const date = new Date(curr.setDate(first + i));
             week.push(date);
         }
