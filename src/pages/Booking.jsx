@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, getDocs, onSnapshot } from "firebase/firestore";
 import { firestore } from "../firebase";
 import React, { useRef } from "react";
 import "../Booking.css";
@@ -14,16 +14,23 @@ export default function Booking() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        tlfnr: ""
+        phone: ""
     });
     const [showConfirmation, setShowConfirmation] = useState(false);
 
-    // Load reservations from localStorage
+    const ref = collection(firestore, "bookings");
+
+    // Load reservations from Firebase
     useEffect(() => {
-        const saved = localStorage.getItem('bookings');
-        if (saved) {
-            setReservations(JSON.parse(saved));
-        }
+        const unsubscribe = onSnapshot(ref, (snapshot) => {
+            const bookingsData = snapshot.docs.map(doc => ({
+                id: doc.id,
+                ...doc.data()
+            }));
+            setReservations(bookingsData);
+        });
+
+        return () => unsubscribe();
     }, []);
 
     // Time slots available for booking
@@ -73,25 +80,8 @@ export default function Booking() {
     };
 
     // Submit booking
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-
-        // Debugging logs
-        console.log(nameRef.current.value);
-        console.log(emailRef.current.value);
-        console.log(phoneRef.current.value);
-
-        let data = {
-            name: nameRef.current.value,
-            email: emailRef.current.value,
-            phone: phoneRef.current.value,
-        }
-
-        try {
-            addDoc(ref, data);
-        }   catch (e) {
-            console.error("Error adding document: ", e);
-        }
         
         if (!selectedTime || !formData.name || !formData.email) {
             alert("Udfyld venligst alle felter og vælg et tidspunkt");
@@ -99,22 +89,27 @@ export default function Booking() {
         }
 
         const newReservation = {
-            id: Date.now(),
             date: selectedDate.toDateString(),
             time: selectedTime,
             resource: selectedResource,
-            ...formData
+            name: nameRef.current.value,
+            email: emailRef.current.value,
+            phone: phoneRef.current.value,
+            timestamp: new Date().toISOString()
         };
 
-        const updatedReservations = [...reservations, newReservation];
-        setReservations(updatedReservations);
-        localStorage.setItem('bookings', JSON.stringify(updatedReservations));
-
-        // Reset form and show confirmation
-        setFormData({ name: "", email: "", phone: "" });
-        setSelectedTime("");
-        setShowConfirmation(true);
-        setTimeout(() => setShowConfirmation(false), 5000);
+        try {
+            await addDoc(ref, newReservation);
+            
+            // Reset form and show confirmation
+            setFormData({ name: "", email: "", phone: "" });
+            setSelectedTime("");
+            setShowConfirmation(true);
+            setTimeout(() => setShowConfirmation(false), 5000);
+        } catch (error) {
+            console.error("Error adding document: ", error);
+            alert("Der opstod en fejl. Prøv venligst igen.");
+        }
     };
 
     // Get capacity for resource
@@ -142,7 +137,6 @@ export default function Booking() {
     const nameRef = useRef();
     const emailRef = useRef();
     const phoneRef = useRef();
-    const ref = collection(firestore, "bookings");
 
     return (
         <>
@@ -152,15 +146,14 @@ export default function Booking() {
             </section>
             
             <section className="booking-content">
-                {/* Week Navigation */}
-                <aside className="week-nav">
-                    <button onClick={() => changeWeek(-1)}>← 1 uge</button>
-                    <button onClick={() => changeWeek(0)}>I dag</button>
-                    <button onClick={() => changeWeek(1)}>1 uge →</button>
-                </aside>
-
                 {/* Calendar */}
                 <aside className="calendar">
+                    {/* Week Navigation */}
+                    <div className="week-nav">
+                        <button onClick={() => changeWeek(-1)}>← 1 uge</button>
+                        <button onClick={() => changeWeek(0)}>I dag</button>
+                        <button onClick={() => changeWeek(1)}>1 uge →</button>
+                    </div>
                     <h2>Vælg Dato & Tid</h2>
                     <div className="week-grid">
                         {weekDates.map((date, index) => (
@@ -180,7 +173,7 @@ export default function Booking() {
                                         return (
                                             <button
                                                 key={time}
-                                                className={`time-slot ${selectedDate.toDateString() === date.toDateString() && selectedTime === time ? 'selected-time' : ''} ${!available ? 'unavailable' : ''}`}
+                                                className={`time-slot ${selectedDate.toDateString() === date.toDateString() && selectedTime === time ? 'selected-time' : ''} ${!available ? 'unavailable reserved' : ''}`}
                                                 onClick={(e) => {
                                                     e.stopPropagation();
                                                     setSelectedDate(date);
@@ -189,7 +182,7 @@ export default function Booking() {
                                                 disabled={!available}
                                             >
                                                 {time}
-                                                <span className="spots">{spots} ledige</span>
+                                                <span className="spots">{available ? `${spots} ledige` : 'Reserveret'}</span>
                                             </button>
                                         );
                                     })}
