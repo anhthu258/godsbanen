@@ -19,7 +19,6 @@ body {
 .about-text {
   background-color: rgba(231, 83, 70, 0.639);
   padding: 2rem;
-  border-radius: 8px;
   max-width: 500px;
   text-align: left;
 }
