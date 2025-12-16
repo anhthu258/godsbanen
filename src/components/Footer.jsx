@@ -4,6 +4,7 @@ function Footer({ variant = 'default', logoVariant = 'default' }) {
     const logoByVariant = {
         default: './images/g-logo-white.png',
         red: './images/g-logo-red.png',
+        black: './images/g-logo-black.png',
     };
     const logoSrc = logoByVariant[logoVariant] || logoByVariant.default;
     return (    

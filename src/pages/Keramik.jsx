@@ -91,23 +91,31 @@ function Keramik() {
               igangværende brugere kan arbejde til lukketid.
             </p>
           </div>
-          <button className="bookbutton2">
-            Book tid <span className="arrow">&#10233;</span>{" "}
-          </button>
+          <a href="/booking" >
+            <button className="bookbutton2">
+              Book tid <span className="arrow">&#10233;</span>{" "}
+            </button>
+          </a>
         </div>
         <div className="opportunities">
           <h2 className="opptitle">NOGLE AF MULIGHEDERNE:</h2>
           <ul className="keramiklist">
             <li>Mange forskellige typer ler, men kun stentøjsler/porcelæn.</li>
-            <li>Gipsforme, som man kan låne, og støbe i med porcelæn og/eller stentøjs-støbeler, og andre forme man kan kvætse i.</li>
+            <li>
+              Gipsforme, som man kan låne, og støbe i med porcelæn og/eller
+              stentøjs-støbeler, og andre forme man kan kvætse i.
+            </li>
             <li>Seks elektriske drejeskiver og en ekstruder.</li>
-            <li>Mange forskellige glasurer, begitninger, sinterbegitninger, penselglasurer og dekorationsfarver.</li>
+            <li>
+              Mange forskellige glasurer, begitninger, sinterbegitninger,
+              penselglasurer og dekorationsfarver.
+            </li>
             <li>Fire ovne i forskellige størrelser (mellem 150l – 440l).</li>
           </ul>
         </div>
       </div>
 
-      <Footer variant="white" logoVariant="red"></Footer>
+      <Footer variant="white" logoVariant="black"></Footer>
     </>
   );
 }

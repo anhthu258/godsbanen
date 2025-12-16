@@ -346,7 +346,7 @@ export default function Booking() {
                 </aside>
             </section>
             
-            <Footer variant="beige" />
+            <Footer variant="beige" logoVariant="black" />
         </>
     );
 }
