@@ -29,10 +29,10 @@ function Workshop() {
                 <h3> GRAFISK // KERAMIK // TRÆ // METAL</h3>
                 <p>MANDAG - TIRSDAG: KL. 14 - 21 </p>
                 <p>ONSDAG - TORSDAG: KL. 10 - 16</p>
-                <p className="saturday">LØRDAG I MÅNEDEN: KL. 10 - 15</p>
+                <p className="saturday">1. LØRDAG I MÅNEDEN: KL. 10 - 15</p>
                 <h3>TEKSTIL // LASER</h3>
                 <p>MANDAG - TIRSDAG: KL. 14 - 19</p>
-                <p>LØRDAG I MÅNEDEN:</p>
+                <p>1. LØRDAG I MÅNEDEN:</p>
                 <p>TEKSTIL: KL. 10 - 15</p>
                 <p>LASER: LUKKET</p>
               </div>
