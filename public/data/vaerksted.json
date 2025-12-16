@@ -4,7 +4,7 @@
         "title": "Træ",
         "description": "Har du lyst til at arbejde med træ? På Godsbanens Træværksted kan du bygge og reparere næsten alt, fra plankeborde og skærebrætter til bænke og småreparationer. Vi har maskiner, værktøj og materialer, og vores medarbejdere hjælper dig godt i gang. Kom forbi med din idé, så finder vi en løsning sammen.",
         "image": "./images/wood.png",
-        "link": "/error" 
+        "link": "/*" 
     },
     {
         "id": 2,
@@ -18,27 +18,27 @@
         "title": "Tekstil",
         "description": "På Godsbanens Tekstilværksted kan du arbejde med syning, broderi, tryk og andre tekstile teknikker, uanset om du er nybegynder eller rutineret. Værkstedet rummer symaskiner, overlockere, presseudstyr og materialer, og der er altid en medarbejder til stede, som hjælper dig godt i gang. Kom med din idé, og skab dine egne tekstile projekter i kreative rammer.",
         "image": "./images/tekstil.jpg",
-        "link": "/error"
+        "link": "/*"
     },
     {
         "id": 4,
         "title": "Metal",
         "description": "Mangler du værktøj til at klippe, bukke, svejse, dreje eller lodde? På Godsbanens Metalværksted finder du alt udstyr, du behøver for at skabe alt fra bordben og rækværk til egne møbeldesigns. Her kan du udfolde dine idéer, uanset niveau. Vi stiller maskiner, materialer og hjælp til selvhjælp til rådighed, kom med din idé, så finder vi løsningen sammen.",
         "image": "./images/metal.jpg",
-        "link": "/error"
+        "link": "/*"
     },
     {
         "id": 5,
         "title": "Graphics",
         "description": "På Godsbanens Grafiske Værksted kan du arbejde med tryk, illustration, bogproduktion og digital grafik. Værkstedet har både analoge og digitale værktøjer, og medarbejderne hjælper dig godt i gang, uanset erfaring. Skab dine grafiske projekter i kreative rammer.",
         "image": "./images/grafisk.png"
-        ,"link": "/error"
+        ,"link": "/*"
     },
     {
         "id": 6,
         "title": "Laser",
         "description": "På Godsbanens Laser-, Shaper- og 3D-værksted kan du skære, gravere og fremstille modeller med laser cutter, CNC-shaper og 3D-printere. Uanset om du er ny eller erfaren, får du adgang til professionelt udstyr og hjælp til selvhjælp. Kom og realisér dine prototyper, modeller og kreative idéer i præcise digitale processer.",
         "image": "./images/laser.jpg",
-        "link": "/error"
+        "link": "/*"
     }
 ]
