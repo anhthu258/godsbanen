@@ -43,9 +43,11 @@ function Keramik() {
                 <a href="https://godsbanen.dk/kalender/type/kursus/">KURSER</a>
               </p>
             </div>
-            <button className="bookbutton">
-              Book tid <span className="arrow">&#10233;</span>{" "}
-            </button>
+            <a href="/booking">
+              <button className="bookbutton">
+                Book tid <span className="arrow">&#10233;</span>{" "}
+              </button>
+            </a>
           </div>
         </div>
         <div className="aboutbox">
@@ -91,7 +93,7 @@ function Keramik() {
               igangværende brugere kan arbejde til lukketid.
             </p>
           </div>
-          <a href="/booking" >
+          <a href="/booking">
             <button className="bookbutton2">
               Book tid <span className="arrow">&#10233;</span>{" "}
             </button>
