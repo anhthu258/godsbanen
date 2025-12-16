@@ -1,7 +1,7 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import { Link } from "react-router-dom";
 import "../Keramik.css";
-
 
 function Keramik() {
   return (
@@ -43,11 +43,11 @@ function Keramik() {
                 <a href="https://godsbanen.dk/kalender/type/kursus/">KURSER</a>
               </p>
             </div>
-            <a href="/booking">
+            <Link to="/booking">
               <button className="bookbutton">
                 Book tid <span className="arrow">&#10233;</span>{" "}
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="aboutbox">
@@ -93,11 +93,11 @@ function Keramik() {
               igangværende brugere kan arbejde til lukketid.
             </p>
           </div>
-          <a href="/booking">
+          <Link to="/booking">
             <button className="bookbutton2">
               Book tid <span className="arrow">&#10233;</span>{" "}
             </button>
-          </a>
+          </Link>
         </div>
         <div className="opportunities">
           <h2 className="opptitle">NOGLE AF MULIGHEDERNE:</h2>
@@ -121,6 +121,5 @@ function Keramik() {
     </>
   );
 }
-
 
 export default Keramik;
