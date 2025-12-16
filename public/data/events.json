@@ -6,7 +6,7 @@
         "image": "./images/a-piece-of-land.png",
         "date": "21. November 2025 til 21. December 2025",
         "time": "12:00 - 15:00",
-        "link": "*"
+        "link": "/eventpiece"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "image": "./images/kaare.jpg",
         "date": "9. Januar 2026 til 8. Marts 2026",
         "time": "8:00 - 22:00",
-        "link": "*"
+        "link": "/*"
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "image": "./images/monoxundervejs.png",
         "date": "11. December 2026",
         "time": "19:00 - 20:00",
-        "link": "*"
+        "link": "/*"
     },
     {
         "id": 4,
@@ -33,6 +33,6 @@
         "image": "./images/smykke-i-soelv.jpg",
         "date": "22. Januar 2026",
         "time": "17:00 - 20:40",
-        "link": "*"
+        "link": "/*"
     }
 ]

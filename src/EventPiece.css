@@ -1,0 +1,33 @@
+.preview{
+    background-image: url(/public/images/a-piece-of-land.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    height: 50vh;
+}
+
+/* back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 100;
+  color: #049cc9;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.back-to-top img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
