@@ -13,7 +13,7 @@ function Events() {
       <div className="section-body">
         <figure className="big-picture">
           <img
-            src="../images/events-sorthvid.png"
+            src="./images/events-sorthvid.png"
             alt="to personer der står på skateboard foran godbanen"
           />
 
@@ -54,7 +54,7 @@ function Events() {
       </div>
 
       <div className="back-to-top" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-        <img src="/images/arrow-circle-up.svg" alt="back to the top" />
+        <img src="./images/arrow-circle-up.svg" alt="back to the top" />
       </div>
       
       <Footer variant="blue"></Footer>

@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Merzbow (JP)",
         "description": "Oplev den legendariske japanske støjkunstner Merzbow (Masami Akita) – en af verdens mest indflydelsesrige skikkelser inden for eksperimentel lydkunst. Siden slutningen af 1970’erne har Merzbow sprængt grænserne for, hvad musik kan være, og banet vejen for generationer af lydkunstnere verden over.",
-        "image": "/images/merzbow.png",
+        "image": "./images/merzbow.png",
         "date": "18. Januar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -12,7 +12,7 @@
         "id": 2,
         "title": "100%WET",
         "description": "Med deres uforudsigelige blanding af genre og lagdelte produktioner har 100%WET skabt et soundscape, hvor lytteren både kan blive opslugt og forført af et musikalsk univers, der ligger mellem drømme og virkelighed.",
-        "image": "/images/100wet.png",
+        "image": "./images/100wet.png",
         "date": "23. Januar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -21,7 +21,7 @@
         "id": 3,
         "title": "Mikael Simpson",
         "description": "Efter en årrække med et mere akustisk og jazzet udtryk i sit live-setup, vender Mikael Simpson nu tilbage til det elektroniske lydlandskab, som mange kender og elsker fra hans pladeudgivelser.",
-        "image": "/images/mikael-simpson.png",
+        "image": "./images/mikael-simpson.png",
         "date": "28. - 29. Januar 2025",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -30,7 +30,7 @@
         "id": 4,
         "title": "KOM VI LØBER",
         "description": "Sanger, sangskriver, guitarist og producer, Lone Slot Nielsen, har siden sin debut i 2019 skrevet indie-sange om eksistensen og dens brudflader under navnet KOM VI LØBER. Sange om det, vi løber begejstrede hen til, og det vi helst stikker af fra. Det er nogle gange det samme. Og så har vi balladen.",
-        "image": "/images/kom-vi.png",
+        "image": "./images/kom-vi.png",
         "date": "30. Januar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -39,7 +39,7 @@
         "id": 5,
         "title": "Bushbabies",
         "description": "Den 31. oktober lander Bushbabies’ andet album ”Huma Bird”. På denne udgivelse bevæger de sig hen over kontinenterne og lader sig inspirere af persisk funk, brasiliansk folklore, afrikanske koklokker og tibetanske bjerge i deres søgen efter den guddommelige fugl Huma bird, der i følge sagnet bringer evig lykke til den, der bliver ramt af dens skygge.",
-        "image": "/images/bushbabies.png",
+        "image": "./images/bushbabies.png",
         "date": "5. Februar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -48,7 +48,7 @@
         "id": 6,
         "title": "Bleary Eyed",
         "description": "Når Bleary Eyed går på scenen, er det som at træde ind i en tåge af lys, støj og nærvær. Som publikum fanges man i en hypnotisk blanding af fuzzede guitarer, boblende synths og svævende vokaler, hvor alt føles både intenst og drømmende. Stereogum har kaldt Bleary Eyed “a kaleidoscopic whirl of guitars and muffled vocals that will certainly hit all the pleasure centers,” og Paste Magazine har ganske enkelt kaldt bandet for “perfect dreaminess.”",
-        "image": "/images/bleary-eyed.png",
+        "image": "./images/bleary-eyed.png",
         "date": "7. Februar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -57,7 +57,7 @@
         "id": 7,
         "title": "Anna Roemer with Strings",
         "description": "Jazzguitarist og komponist Anna Roemer har markeret sig som en af de mest originale stemmer på den danske musikscene. Med sin særegne guitarlyd og et pedalboard som medspiller, skaber hun nærværende, billedskabende og dybt personlige lydlandskaber.",
-        "image": "/images/anna-roemer.png",
+        "image": "./images/anna-roemer.png",
         "date": "12. Februar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -66,7 +66,7 @@
         "id": 8,
         "title": "Feral Nature + Celestial Scourge + Sewer Haul",
         "description": "Feral Nature, Celestial Scourge og Sewer Haul samles til en Radar-aften i den nordiske metals tegn. Publikum kan forvente tunge riffs, teknisk præcision og kompromisløs energi, der med garanti holder adrenalinen kørende i timevis. Tre bands, tre forskellige udtryk – én aften med mørk lyd, der udfordrer og fastholder din opmærksomhed.",
-        "image": "/images/feral-nature.png",
+        "image": "./images/feral-nature.png",
         "date": "13. Februar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -75,7 +75,7 @@
         "id": 9,
         "title": "Oilly Wallace",
         "description": "Den prisvindende danske saxofonist, fløjtenist og komponist Oilly Wallace give rkoncert på Radar i kølvandet på sin seneste fuldlængdeudgivelse ‘Sugar Baby Butterfly’",
-        "image": "/images/oilly.png",
+        "image": "./images/oilly.png",
         "date": "21. Februar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -84,7 +84,7 @@
         "id": 10,
         "title": "Leonard Cohen",
         "description": "Vi udforsker Cohens særlige blanding af poesi, spiritualitet og jordnærhed, og hvordan han med sin stemme og sine tekster satte ord på livets store spørgsmål. Og selvfølgelig skal vi lytte til nogle af hans mest uforglemmelige sange!",
-        "image": "/images/leonard.jpg",
+        "image": "./images/leonard.jpg",
         "date": "23. Februar 2026",
         "time": "19:00 - 21:00",
         "link": "*"
@@ -93,7 +93,7 @@
         "id": 11,
         "title": "Filmaften",
         "description": "Filmaften er dansksproget rock. Popmusik med powerakkorder og guitarsolo til dine cornflakes. Kærlighedssange spillet på rigtige instrumenter og uredigeret vildskab i radiolængde.",
-        "image": "/images/filmaften.png",
+        "image": "./images/filmaften.png",
         "date": "27. Februar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -102,7 +102,7 @@
         "id": 12,
         "title": "Aarhus Drag Extravaganza Vol. 5",
         "description": "Uanset om du er garvet drag-entusiast eller spritny og klar på den vildeste fest, så tag forbi Radar lørdag den 28. februar 2026 til et brag af et show med nogle af Danmarks absolut bedste drag-performere!",
-        "image": "/images/drag.png",
+        "image": "./images/drag.png",
         "date": "28. Februar 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -111,7 +111,7 @@
         "id": 13,
         "title": "Sorten Muld",
         "description": "Vi er tilbage i april 1996. København er på daværende tidspunkt europæisk kulturby, og det nyetablerede orkester Sorten Muld rejser med CatLink fra Aarhus til hovedstaden for at spille deres allerførste livekoncert.",
-        "image": "/images/sorten.png",
+        "image": "./images/sorten.png",
         "date": "7. Marts 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -120,7 +120,7 @@
         "id": 14,
         "title": "Oskar Krusell & Band",
         "description": "Med grød og følelser uden på tøjet er Oskar Krusell tilbage med opfølgeren til debutalbummet ‘OSKAR’ fra 2023. ‘Mit barn’ indeholder otte sange undfanget i en brydningstid, hvor en datter og en fødselsdepression meldte deres ankomst samtidig. For hvad gør man, når man elsker sit barn, men også har lyst til at kværke det?",
-        "image": "/images/oskar.png",
+        "image": "./images/oskar.png",
         "date": "12. Marts 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -129,7 +129,7 @@
         "id": 15,
         "title": "ØNDI",
         "description": "Emo!? Punk!? Klub!? Industrial!? Eller bare Pop? ØNDI er en kompromisløs fusion af ungdommelig energi, generationsbevidst humor og hårdtslående produktioner.",
-        "image": "/images/ondi.png",
+        "image": "./images/ondi.png",
         "date": "13. Marts 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -138,7 +138,7 @@
         "id": 16,
         "title": "Guttural Disgorge",
         "description": "Guttural Disgorge er et brutalt slamming death metal-band, der blev dannet i 2023 af to unge efterskoleelever. Nu består bandet af fire dedikerede danske teenagere, forenet af deres ubønhørlige passion for slam metal.",
-        "image": "/images/guttural.png",
+        "image": "./images/guttural.png",
         "date": "20. Marts 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -147,7 +147,7 @@
         "id": 17,
         "title": "Snuggle",
         "description": "Snuggles lyd er både tredimensionel og bomuldsblød, og den skjuler en indre konfliktfyldt dialog. De mange guitarriffs, melodier og tekster gnider sig op ad hinanden og former deres særegne univers.",
-        "image": "/images/snuggle.png",
+        "image": "./images/snuggle.png",
         "date": "21. Marts 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -156,7 +156,7 @@
         "id": 18,
         "title": "Afskum",
         "description": "Efter et par år med eksplosive festivalshows, udsolgte klubkoncerter og en hype, der næsten ikke er til at begribe, vender Afskum tilbage til scenen – denne gang på Radar i Aarhus.",
-        "image": "/images/afskum.png",
+        "image": "./images/afskum.png",
         "date": "27. Marts 2026",
         "time": "-",
         "link": "*"
@@ -165,7 +165,7 @@
         "id": 19,
         "title": "Knægt",
         "description": "Når Knægt går på scenen, fylder han rummet med sin nærværende, lyse vokal og et band, der trækker publikum ind i et univers, hvor både leg og alvor har plads. De luftige trompetsoloer, dansable guitarriffs og fællessang skaber en særlig stemning af nærhed og lethed, uden at vige for de dybere lag i musikken.",
-        "image": "/images/knegt.png",
+        "image": "./images/knegt.png",
         "date": "16. April 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -174,7 +174,7 @@
         "id": 20,
         "title": "Iris Gold",
         "description": "Iris Gold har i en årrække lagt spillesteder og festivaler ned med sit nærvær og højintense sceneshow. Med kærlige nik til navne som Prince, Janelle Monáe og Wu-Tang Clang har hendes eksperimenterende og legende optrædener skabt eufori og sat en fed streg under hendes eminente musikalske kundskaber.",
-        "image": "/images/iris.png",
+        "image": "./images/iris.png",
         "date": "13. Maj 2026",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"

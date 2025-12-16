@@ -41,7 +41,7 @@ function Workshop() {
           <WorkshopTiles
             title="// GRAFISK VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/grafisk.png"
+            imageSrc="./images/grafisk.png"
             buttonText="Læs Mere"
             buttonLink="/Error"
             reverse={false}
@@ -49,7 +49,7 @@ function Workshop() {
           <WorkshopTiles
             title="// KERAMIK VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/keramik.png"
+            imageSrc="./images/keramik.png"
             buttonText="Læs Mere"
             buttonLink="/keramik"
             reverse={true}
@@ -57,7 +57,7 @@ function Workshop() {
           <WorkshopTiles
             title="// TRÆ VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/wood.png"
+            imageSrc="./images/wood.png"
             buttonText="Læs Mere"
             buttonLink="/Error"
             reverse={false}
@@ -65,7 +65,7 @@ function Workshop() {
           <WorkshopTiles
             title="// METAL VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/metal.jpg"
+            imageSrc="./images/metal.jpg"
             buttonText="Læs Mere"
             buttonLink="/Error"
             reverse={true}
@@ -73,7 +73,7 @@ function Workshop() {
           <WorkshopTiles
             title="// LASER VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/laser.jpg"
+            imageSrc="./images/laser.jpg"
             buttonText="Læs Mere"
             buttonLink="/Error"
             reverse={false}
@@ -81,7 +81,7 @@ function Workshop() {
           <WorkshopTiles
             title="// TEKSTIL OG SERIGRAFI VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/tryk.jpg"
+            imageSrc="./images/tryk.jpg"
             buttonText="Læs Mere"
             buttonLink="/Error"
             reverse={true}
@@ -89,7 +89,7 @@ function Workshop() {
           <WorkshopTiles
             title="// SMYKKE VÆRKSTED //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/smykke.jpg"
+            imageSrc="./images/smykke.jpg"
             buttonText="Læs Mere"
             buttonLink="/Error"
             reverse={false}

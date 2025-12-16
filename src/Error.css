@@ -2,7 +2,7 @@
     text-align: left;
     padding: 50px;
     min-height: 80vh;
-    background: url("/images/404-background-big.png") center no-repeat;
+    background: url("/public/images/404-background-big.png") center no-repeat;
     background-size: cover;
     align-items: center;
     display: flex;

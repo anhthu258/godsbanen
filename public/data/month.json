@@ -3,7 +3,7 @@
         "id": 1,
         "title": "A piece of land is a bar of gold",
         "description": "Udstillingen er en kulmination af billedkunstner Maiken Stæhrs seneste års undersøgelser af moderne landbrugsæstetik. Cantina bliver under udstillingen omdannet til en fiktiv produktionsenhed som dyrker nostalgiske og syntetiske drømmesyn. Der vil under ferniseringen være koncert ved musiker Lisen Larsen og serverering af varm suppe. Udstillingen suppleres af tekstbidrag fra kurator og kunsthistoriker Marie Inge Malberg og forfatter Caroline Albertine Minor",
-        "image": "/images/a-piece-of-land.png",
+        "image": "./images/a-piece-of-land.png",
         "date": "21. November 2025 til 21. December 2025",
         "time": "12:00 - 15:00",
         "link": "*"
@@ -12,7 +12,7 @@
         "id": 2,
         "title": "Emily Beresford: Saudade",
         "description": "Saudade var skabt sammen med mine forældre. Sammen lavede vi abstraktioner af deres udsigt ud af vinduerne i Connecticut, jeg dirigerede dem fra min telefon i Aarhus, imens de viste mig hvad der foregik i deres vinduer. Uden muligheden for at rejse hjem til dem i USA, rejser jeg via FaceTime. Tiden sammen før er nu som en drøm. Når jeg tænker på mine forældres forhave, ser jeg lys og farver. Disse “landskaber” viser den abstrakte og uklare måde minder kommer frem. Vores hjem og vores tidligere familieliv blev minder for mig, sløret og nogle gange knap det, men stadig potent.",
-        "image": "/images/emily.jpg",
+        "image": "./images/emily.jpg",
         "date": "8. Deceember 2025 til 24. Februar 2026",
         "time": "8:00 - 16:00",
         "link": "*"
@@ -21,7 +21,7 @@
         "id": 3,
         "title": "Habenguts julemarked",
         "description": "Kom og få fyldt julehjerterne op 🎄🥁😍 Lørdag d. 13. december skrues der helt op for hyggen på Godsbanen, på Habenguts Julemarked 🎅✨ Et marked fyldt af det, du aller helst vil finde i juleudsmykningen, på julebordet, under juletræet mm. 70 nøje udvalgte stadeholdere står klar til at hygge om os og sprede juleglæde 🙂 Her kan du finde det unikke, sjove, skæve, søde og ikke mindst hjertevarme input til december 🎄💝 Kom og smag på julens delikatesser, køb det flotteste pynt og unikke gaver på Godsbanen. Gløgg, æbleskiver, saft, kage mm. kan nydes i caféen 🥨☕️ Entré kun 20,-. Gratis entré for børn 0-12 år.",
-        "image": "/images/habenguts.jpg",
+        "image": "./images/habenguts.jpg",
         "date": "13. December 2025",
         "time": "10:00 - 17:00",
         "link": "*"
@@ -30,7 +30,7 @@
         "id": 4,
         "title": "War of Destruction - Slytter + Troop Transport + Brandsår",
         "description": "Efter mere end fire årtier på scenen er tiden kommet: War of Destruction, Aarhus’ og Danmarks mest vedholdende hardcore-punkband, spiller deres allersidste koncert i hjembyen. Den 13. december 2025 rammer de Radar, hvor bandet én sidste gang vil lade raseriet, støjen og energien eksplodere foran et aarhusiansk publikum.",
-        "image": "/images/war-of-destruction.png",
+        "image": "./images/war-of-destruction.png",
         "date": "13. December 2025",
         "time": "Døre 19:00 - Koncert 20:00",
         "link": "*"
@@ -39,7 +39,7 @@
         "id": 5,
         "title": "Udgivelsesreception for ‘Tre skuespil af Bjørn Rasmussen’",
         "description": "Vi håber at se jer til udgivelsesreception for ‘Tre skuespil af Bjørn Rasmussen – A Clockwork Orange, Traum og Fædra’ fredag d. 13. december kl. 14.00-16.00 i Vogn 1 på Godsbanen i Aarhus. ‘Tre skuespil af Bjørn Rasmussen – A Clockwork Orange, Traum og Fædra’ er anden udgivelse i Forlaget bastards skriftserie for performancetekster, og vi glæder os rigtig meget til at fejre det med jer.",
-        "image": "/images/tre-skuespil.jpeg",
+        "image": "./images/tre-skuespil.jpeg",
         "date": "13. December 2025",
         "time": "14:00 - 16:00",
         "link": "*"
@@ -48,7 +48,7 @@
         "id": 6,
         "title": "Julebanko 2025",
         "description": "Julestemningen har ramt Godsbanen, og vi inviterer dig til en aften med banko, hygge og juleglæde i et rum fyldt med god energi og byens flotteste julepynt! Hvornår: 15. december kl. 19.00–21.00 Pris: 150 kr.",
-        "image": "/images/julebanko-2025.png",
+        "image": "./images/julebanko-2025.png",
         "date": "15. December 2025",
         "time": "19:00 - 21:00",
         "link": "*"
@@ -57,7 +57,7 @@
         "id": 7,
         "title": "THE OTHER IN THE FAILURE",
         "description": "Pianisten Zubin Kanga, akkordeonisten Andreas Borregaard og komponisten Kirstine Lindemann afsøger det ukendte i mødet med “den anden”, med vor tids maskine og det fejlslagne i imitationen.",
-        "image": "/images/lindemann.png",
+        "image": "./images/lindemann.png",
         "date": "16. December 2025",
         "time": "16:30",
         "link": "*"
@@ -66,7 +66,7 @@
         "id": 8,
         "title": "TBare Mellem Os",
         "description": "En oplagt mulighed for at tage familie og venner med til en anderledes decemberoplevelse sammen! Bare Mellem Os er en sketch-baseret teaterforestilling bestående af fem korte, moderne og skævt humoristiske teaterstykker, bearbejdet og instrueret af Frederik Munch.",
-        "image": "/images/bare-mellem-os.jpeg",
+        "image": "./images/bare-mellem-os.jpeg",
         "date": "20. December 2025",
         "time": "15:00 & 19:30",
         "link": "*"
@@ -75,7 +75,7 @@
         "id": 9,
         "title": "Julelukket på Godsbanen",
         "description": "Godsbanen trækker også julestikket og lukker ned i juledagene (alle dage inklusive): Lørdag d. 20. december 2025 – Søndag d. 4. januar 2026. Godsbanens værksteder har også lukket fredag d. 19. december 2025. Glædelig jul og godt nytår til alle ❄️",
-        "image": "/images/julelukket.jpg",
+        "image": "./images/julelukket.jpg",
         "date": "20. December 2025 - 4. Januar 2026",
         "time": "-",
         "link": "*"

@@ -14,11 +14,11 @@ export default function Error() {
                     </p>
                     <h1>404</h1> 
                     <Link to="/" className="back-button" aria-label="Gå til forsiden">
-                        <img src="/images/train.png" alt="back to home" />
+                        <img src="./images/train.png" alt="back to home" />
                         <span className="back-button-label">Til forsiden</span>
                     </Link>
                 </div>
-                <img src="/images/stripes.png" alt="decoration" />
+                <img src="./images/stripes.png" alt="decoration" />
             </section>
         <Footer></Footer>
         </>
