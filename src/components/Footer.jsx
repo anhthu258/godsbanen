@@ -2,8 +2,8 @@ import '../Footer.css';
 
 function Footer({ variant = 'default', logoVariant = 'default' }) {
     const logoByVariant = {
-        default: '/images/g-logo-white.png',
-        red: '/images/g-logo-red.png',
+        default: './images/g-logo-white.png',
+        red: './images/g-logo-red.png',
     };
     const logoSrc = logoByVariant[logoVariant] || logoByVariant.default;
     return (    
@@ -27,13 +27,13 @@ function Footer({ variant = 'default', logoVariant = 'default' }) {
                     <p>FØLG GODSBANEN</p>
                     <div>
                         <a href="https://facebook.com/godsbanen" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/facebook-ikon.png" alt="Facebook" />
+                            <img src="./images/facebook-ikon.png" alt="Facebook" />
                         </a>
                         <a href="https://flickr.com/godsbanen" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/flickr-ikon.png" alt="Flickr" />
+                            <img src="./images/flickr-ikon.png" alt="Flickr" />
                         </a>
                         <a href="https://instagram.com/godsbanen" target="_blank" rel="noopener noreferrer">
-                            <img src="/images/instagram-ikon.png" alt="Instagram" />
+                            <img src="./images/instagram-ikon.png" alt="Instagram" />
                         </a>
                     </div>
                 </aside>

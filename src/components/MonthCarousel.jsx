@@ -76,7 +76,7 @@ function EventCarousel() {
 
       {/* Næste button */}
       <img 
-        src="/images/arrow-right.svg" 
+        src="./images/arrow-right.svg" 
         alt="Næste" 
         className={`${classes.eventCarouselButton}`}
         onClick={nextSlide}
