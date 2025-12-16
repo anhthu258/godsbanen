@@ -35,7 +35,7 @@ export default function Home() {
       <section className="workshops">
         <Link to="/workshop" className="section-link">
           <h1>VÆRKSTEDER</h1>
-          <img src="/images/pil.svg" alt="pil" />
+          <img src="./images/pil.svg" alt="pil" />
         </Link>
         <WorkshopCarousel />
       </section>
@@ -43,7 +43,7 @@ export default function Home() {
       <section className="events">
         <Link to="/events" className="section-link">
           <h1>DET DER SKER</h1>
-          <img src="/images/pil.svg" alt="pil" />
+          <img src="./images/pil.svg" alt="pil" />
         </Link>
         <EventCarousel />
       </section>
