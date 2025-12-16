@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Workshop from "./pages/Workshop";
 import Events from "./pages/Events";
 import Home from "./pages/Home";
@@ -10,7 +10,6 @@ import Booking from "./pages/Booking";
 function App() {
   return (
     <>
-      <BrowserRouter>
         <Routes>
           {/*<Route path="/" element={<Hometest />} />*/}
           <Route path="/" element={<Home />} />
@@ -20,7 +19,6 @@ function App() {
           <Route path="/booking" element={<Booking />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </BrowserRouter>
     </>
   );
 }
