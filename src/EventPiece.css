@@ -1,13 +1,67 @@
+/* preview */
 .preview{
     background-image: url(/public/images/a-piece-of-land.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 2rem;
     height: 50vh;
+}
+
+.preview img{
+    width: 100px;
+    height: auto;
+}
+
+/* banner content*/
+.banner-content {
+    text-align: center;
+    color: #f9f9f9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: clamp(2rem, 10vw, 12rem);
+}
+
+.banner-content h3{
+    font-size: 2.5rem;
+}
+
+/* main content */
+.content-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.title-section{
+  margin: 2rem 2rem 0 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e1e1e;
+}
+
+.description{
+  height: 10%;
+  width: 70%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e1e1e;
+}
+
+/* event info */
+.event-info{
+  flex: 1;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e1e1e;
+  background-color: #049cc9;
+  padding: 1rem;
 }
 
 /* back to top button */

@@ -4,6 +4,8 @@ import { useNavigate } from "react-router";
 import "../EventPiece.css";
 
 function EventPiece() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Header variant="blue"></Header>
@@ -19,7 +21,7 @@ function EventPiece() {
                 </div>
             </section>
             <main className="content">
-        <section className="teaser">
+        <section className="title-section">
             <h1>A Piece of Land</h1>
         </section>
         <div className="content-wrapper">
