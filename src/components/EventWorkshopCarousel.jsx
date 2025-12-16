@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import classes from '../EventWorkshopCarousel.module.css';
+import { useState, useEffect } from "react";
+import classes from "../EventWorkshopCarousel.module.css";
 
 function EventCarousel() {
   const [events, setEvents] = useState([]);

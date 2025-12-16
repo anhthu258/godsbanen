@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import '../WorkshopCarousel.css';
+import { useState, useEffect } from "react";
+import "../WorkshopCarousel.css";
 
 function WorkshopCarousel() {
   const [workshops, setWorkshops] = useState([]);

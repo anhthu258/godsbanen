@@ -1,4 +1,4 @@
-import '../Footer.css';
+import "../Footer.css";
 
 function Footer({ variant = 'default', logoVariant = 'default' }) {
     const logoByVariant = {
