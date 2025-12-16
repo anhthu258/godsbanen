@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "../workshoptiles.css";
 
 function WorkshopTiles({
@@ -16,9 +17,9 @@ function WorkshopTiles({
           <p className="workshop-description">{description}</p>
         </div>
         {buttonLink ? (
-          <a className="workshop-button" href={buttonLink}>
+          <Link className="workshop-button" to={buttonLink}>
             {buttonText}
-          </a>
+          </Link>
         ) : (
           <button className="workshop-button">{buttonText}</button>
         )}

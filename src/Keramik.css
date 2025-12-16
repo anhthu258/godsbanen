@@ -60,6 +60,10 @@ h3 {
   margin-top: 0.3rem;
 }
 
+.pinfo a{
+  color: #f9f9f9;
+}
+
 .aboutbox {
   background-color: #DCDAC9;
   width: 100%;
@@ -73,7 +77,10 @@ h3 {
   justify-content: space-evenly;
   
   letter-spacing: 0.1rem;
-  
+}
+
+.aboutbox a{
+  color: black;
 }
 
 a {

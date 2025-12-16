@@ -43,7 +43,7 @@ function Workshop() {
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
             imageSrc="./images/grafisk.png"
             buttonText="Læs Mere"
-            buttonLink="/Error"
+            buttonLink="/*"
             reverse={false}
           />
           <WorkshopTiles
@@ -59,7 +59,7 @@ function Workshop() {
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
             imageSrc="./images/wood.png"
             buttonText="Læs Mere"
-            buttonLink="/Error"
+            buttonLink="/*"
             reverse={false}
           />
           <WorkshopTiles
@@ -67,7 +67,7 @@ function Workshop() {
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
             imageSrc="./images/metal.jpg"
             buttonText="Læs Mere"
-            buttonLink="/Error"
+            buttonLink="/*"
             reverse={true}
           />
           <WorkshopTiles
@@ -75,7 +75,7 @@ function Workshop() {
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
             imageSrc="./images/laser.jpg"
             buttonText="Læs Mere"
-            buttonLink="/Error"
+            buttonLink="/*"
             reverse={false}
           />
           <WorkshopTiles
@@ -83,7 +83,7 @@ function Workshop() {
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
             imageSrc="./images/tryk.jpg"
             buttonText="Læs Mere"
-            buttonLink="/Error"
+            buttonLink="/*"
             reverse={true}
           />
           <WorkshopTiles
@@ -91,15 +91,15 @@ function Workshop() {
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
             imageSrc="./images/smykke.jpg"
             buttonText="Læs Mere"
-            buttonLink="/Error"
+            buttonLink="/*"
             reverse={false}
           />
           <WorkshopTiles
             title="// KUNSTPRINT //"
             description="Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur."
-            imageSrc="/images/kunstprint.jpeg"
+            imageSrc="./images/kunstprint.jpeg"
             buttonText="Læs Mere"
-            buttonLink="/Error"
+            buttonLink="/*"
             reverse={true}
           />
         </div>
