@@ -1,12 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
-export default defineConfig(({command}) => {
-  const isDev = command === 'serve';
-  
+// https://vitejs.dev/config/
+export default defineConfig(({ command }) => {
   return {
-    base: isDev ? '/' : '/godsbanen/',
-    plugins: [react(), tailwindcss()],
-  }
-})
+    plugins: [react()],
+    base: command === "serve" ? "/" : "/godsbanen/", // 👈 Replace with your GitHub repository name
+  };
+});
