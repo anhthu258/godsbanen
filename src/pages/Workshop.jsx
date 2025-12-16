@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import WorkshopTiles from "../components/workshoptiles";
+import WorkshopTiles from "../components/Workshoptiles";
 
 import "../workshop.css";
 
