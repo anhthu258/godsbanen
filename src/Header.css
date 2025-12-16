@@ -60,6 +60,10 @@
   display: flex;
 }
 
+::marker {
+  content: none;
+}
+
 .nav-links li a {
   color: var(--nav-text);
   text-decoration: none;
