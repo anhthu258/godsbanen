@@ -53,7 +53,7 @@ function EventCarousel() {
     <section className={`${classes.eventCarousel}`}>
       {/* Tilbage button */}
       <img 
-        src="/images/arrow-left.svg" 
+        src="./images/arrow-left.svg" 
         alt="Tilbage" 
         className={`${classes.eventCarouselButton}`}
         onClick={prevSlide}
@@ -79,7 +79,7 @@ function EventCarousel() {
 
       {/* Næste button */}
       <img 
-        src="/images/arrow-right.svg" 
+        src="./images/arrow-right.svg" 
         alt="Næste" 
         className={`${classes.eventCarouselButton}`}
         onClick={nextSlide}
